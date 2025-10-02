@@ -3,104 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RFCTec in Archerfield, Brisbane offers expert custom welding and general car mechanics. Book your appointment today for quality service at $110/hour inc GST.">
-    <meta name="keywords" content="RFCTec, custom welding Brisbane, car mechanics Brisbane, automotive services Archerfield, auto repair Archerfield, vehicle welding">
+    <meta name="description" content="RFCTec in Archerfield, Brisbane offers expert custom welding and car mechanics. Book your appointment for premium automotive services at $110/hour inc GST.">
+    <meta name="keywords" content="RFCTec, custom welding Brisbane, car mechanics Brisbane, automotive services Archerfield, auto repair Archerfield, vehicle welding, Brisbane auto shop">
     <meta name="author" content="RFCTec">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="RFCTec | Custom Welding & Mechanics in Archerfield, Brisbane">
-    <meta property="og:description" content="Expert custom welding and general car mechanics in Archerfield, Brisbane. By appointment only, $110/hour inc GST. Contact RFCTec today!">
+    <meta property="og:title" content="RFCTec | Premium Custom Welding & Mechanics in Archerfield, Brisbane">
+    <meta property="og:description" content="Discover top-tier custom welding and car mechanics at RFCTec in Archerfield, Brisbane. By appointment only, $110/hour inc GST. Book now!">
     <meta property="og:url" content="https://rfctec.com">
     <meta property="og:type" content="website">
-    <title>RFCTec | Custom Welding & Mechanics in Archerfield, Brisbane</title>
+    <meta property="og:image" content="https://rfctec.com/og-image.jpg">
+    <title>RFCTec | Premium Custom Welding & Mechanics in Archerfield, Brisbane</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#1D4ED8',
-                        secondary: '#1F2937',
+                        primary: '#F3F4F6', // Light grey
+                        secondary: '#FFFFFF', // White
+                        accent: '#2563EB', // Vibrant blue for CTAs
+                        text: '#1F2937', // Dark grey for text
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
                     },
                 },
             },
         }
     </script>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-primary font-sans">
     <div class="min-h-screen flex flex-col">
         <!-- Header -->
-        <header class="bg-primary text-white py-6">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h1 class="text-4xl sm:text-5xl font-bold mb-2">RFCTec</h1>
-                <p class="text-lg sm:text-xl">Expert Custom Welding & General Mechanics in Archerfield, Brisbane</p>
-                <a href="#contact" class="mt-4 inline-block bg-secondary hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition">Book Now</a>
+        <header class="bg-secondary shadow-sm py-6 fixed w-full z-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+                <h1 class="text-3xl sm:text-4xl font-bold text-text">RFCTec</h1>
+                <nav>
+                    <a href="#contact" class="bg-accent hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition animate-slide-up">Book Appointment</a>
+                </nav>
             </div>
         </header>
 
-        <!-- Main Content -->
-        <main class="flex-grow">
-            <!-- About Section -->
-            <section id="about" class="py-16 bg-white">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 class="text-3xl sm:text-4xl font-semibold text-secondary mb-6">About RFCTec</h2>
-                    <p class="text-lg text-gray-700 mb-4">RFCTec, based in Archerfield, Brisbane, specializes in high-quality custom welding and general automotive mechanics for cars. With years of experience, our skilled technicians deliver precision and reliability to keep your vehicle in top condition. We focus on custom welding solutions for structural repairs, modifications, and enhancements, alongside comprehensive mechanical services to ensure your car runs smoothly.</p>
-                    <p class="text-lg text-gray-700">We don’t offer painting services, allowing us to concentrate on what we do best: welding and mechanics. All services are by appointment only, ensuring personalized attention for every job. Our rate is $110/hour (inc GST), providing transparent and competitive pricing for Brisbane’s automotive community.</p>
-                </div>
-            </section>
+        <!-- Hero Section -->
+        <section class="pt-24 pb-16 bg-primary text-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-fade-in">
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-text mb-4">Precision Automotive Services in Archerfield</h2>
+                <p class="text-lg sm:text-xl text-gray-600 mb-6">RFCTec delivers expert custom welding and general car mechanics in Brisbane. By appointment only at $120/hour inc GST.</p>
+                <a href="#contact" class="inline-block bg-accent hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition animate-slide-up">Get Started</a>
+            </div>
+        </section>
 
-            <!-- Services Section -->
-            <section id="services" class="py-16 bg-gray-100">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-3xl sm:text-4xl font-semibold text-secondary mb-6 text-center">Our Services</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                        <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold text-primary mb-2">Custom Welding</h3>
-                            <p class="text-gray-700">We provide expert welding services for automotive applications, including structural repairs, exhaust systems, chassis modifications, and custom fabrications. Our precision welding ensures durability and safety for your vehicle.</p>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold text-primary mb-2">General Mechanics</h3>
-                            <p class="text-gray-700">From routine maintenance to complex repairs, our general mechanics services cover brakes, suspension, engine diagnostics, and more. We keep your car performing at its best.</p>
-                        </div>
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-secondary">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
+                <h2 class="text-3xl sm:text-4xl font-semibold text-text mb-6">Why Choose RFCTec?</h2>
+                <p class="text-lg text-gray-600 mb-6">At RFCTec, located in Archerfield, Brisbane, we’re passionate about delivering top-tier automotive solutions. Our expert team specializes in custom welding and general mechanics, ensuring your vehicle receives the highest standard of care. With a focus on precision and durability, we tackle everything from structural repairs to routine maintenance, all tailored to your car’s needs.</p>
+                <p class="text-lg text-gray-600 mb-6">We don’t offer painting services, allowing us to hone our expertise in welding and mechanical repairs. Operating by appointment only, we provide personalized service at a transparent rate of $120/hour (inc GST). Whether you need a custom exhaust system or a full mechanical overhaul, RFCTec is your trusted partner in Brisbane’s automotive scene.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
+                    <div class="bg-primary p-6 rounded-lg shadow-md animate-slide-up">
+                        <h3 class="text-xl font-bold text-text mb-2">Expertise</h3>
+                        <p class="text-gray-600">Years of experience in automotive welding and mechanics.</p>
+                    </div>
+                    <div class="bg-primary p-6 rounded-lg shadow-md animate-slide-up">
+                        <h3 class="text-xl font-bold text-text mb-2">Precision</h3>
+                        <p class="text-gray-600">High-quality, durable solutions for every job.</p>
+                    </div>
+                    <div class="bg-primary p-6 rounded-lg shadow-md animate-slide-up">
+                        <h3 class="text-xl font-bold text-text mb-2">Transparency</h3>
+                        <p class="text-gray-600">Clear pricing at $110/hour inc GST.</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Contact Section -->
-            <section id="contact" class="py-16 bg-primary text-white">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 class="text-3xl sm:text-4xl font-semibold mb-6 text-center">Contact RFCTec</h2>
-                    <p class="text-lg text-center mb-8">Book your appointment today! We operate by appointment only at $110/hour (inc GST). Fill out the form below or reach out directly.</p>
-                    <div class="max-w-lg mx-auto">
-                       digitalocean.com <form action="https://formsubmit.co/info@rfctec.com" method="POST" class="space-y-4">
-                            <input type="hidden" name="_subject" value="New Booking Request from RFCTec Website">
-                            <input type="hidden" name="_captcha" value="false">
-                            <div>
-                                <label for="name" class="block text-sm font-mediaum">Name</label>
-                                <input type="text" id="name" name="name" required class="w-full p-3 rounded-lg bg-gray-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-secondary">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-sm font-medium">Email</label>
-                                <input type="email" id="email" name="email" required class="w-full p-3 rounded-lg bg-gray-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-secondary">
-                            </div>
-                            <div>
-                                <label for="message" class="block text-sm font-medium">Message</label>
-                                <textarea id="message" name="message" rows="4" required class="w-full p-3 rounded-lg bg
-
--gray-200 text-gray-800 focus:outline-none focus:ring-2 focus:ring-secondary"></textarea>
-                            </div>
-                            <button type="submit" class="w-full bg-secondary hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition">Send Message</button>
-                        </form>
-                        <p class="mt-6 text-center">Email: <a href="mailto:info@rfctec.com" class="underline">info@rfctec.com</a><br>Located in Archerfield, Brisbane, Australia</p>
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-primary">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-semibold text-text mb-6 text-center">Our Services</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="bg-secondary p-8 rounded-lg shadow-md animate-slide-up">
+                        <h3 class="text-2xl font-bold text-text mb-3">Custom Welding</h3>
+                        <p class="text-gray-600">We offer precision welding for automotive applications, including structural repairs, exhaust systems, chassis modifications, and custom fabrications. Our welds are built to last, ensuring safety and performance for your vehicle.</p>
+                    </div>
+                    <div class="bg-secondary p-8 rounded-lg shadow-md animate-slide-up">
+                        <h3 class="text-2xl font-bold text-text mb-3">General Mechanics</h3>
+                        <p class="text-gray-600">From routine maintenance to complex diagnostics, our mechanics handle brakes, suspension, engines, and more. We keep your car running smoothly with expert care tailored to your needs.</p>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-secondary">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-fade-in">
+                <h2 class="text-3xl sm:text-4xl font-semibold text-text mb-6 text-center">Contact RFCTec</h2>
+                <p class="text-lg text-gray-600 text-center mb-8">Ready to get your car in top shape? Book your appointment with RFCTec today. We operate by appointment only at $110/hour (inc GST). Fill out the form or contact us directly.</p>
+                <div class="max-w-lg mx-auto">
+                    <form action="https://formsubmit.co/info@rfctec.com" method="POST" class="space-y-6">
+                        <input type="hidden" name="_subject" value="New Booking Request from RFCTec Website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-text">Name</label>
+                            <input type="text" id="name" name="name" required class="mt-1 w-full p-3 rounded-lg bg-primary text-text border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-text">Email</label>
+                            <input type="email" id="email" name="email" required class="mt-1 w-full p-3 rounded-lg bg-primary text-text border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent transition">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-text">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="mt-1 w-full p-3 rounded-lg bg-primary text-text border border-gray-300 focus:outline-none focus:ring-2 focus:ring-accent transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition animate-slide-up">Send Message</button>
+                    </form>
+                    <p class="mt-6 text-center text-gray-600">Email: <a href="mailto:info@rfctec.com" class="text-accent hover:underline">info@rfctec.com</a><br>Located in Archerfield, Brisbane, Australia</p>
+                </div>
+            </div>
+        </section>
 
         <!-- Footer -->
-        <footer class="bg-secondary text-white py-6">
+        <footer class="bg-text text-white py-6">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <p>&copy; 2025 RFCTec. All rights reserved.</p>
-                <p class="mt-2">Website: <a href="https://rfctec.com" class="underline">rfctec.com</a></p>
+                <p class="mt-2">Website: <a href="https://rfctec.com" class="text-accent hover:underline">rfctec.com</a></p>
             </div>
         </footer>
     </div>
