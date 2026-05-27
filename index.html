@@ -571,42 +571,10 @@
                 </div>
 
                 <div class="reveal">
-                    <form id="contactForm" class="space-y-0">
-                        <div class="border-b border-border">
-                            <input type="text" name="name" class="form-input" placeholder="Your Name *" required>
-                        </div>
-                        <div class="border-b border-border">
-                            <input type="email" name="email" class="form-input" placeholder="Email Address *" required>
-                        </div>
-                        <div class="border-b border-border">
-                            <input type="tel" name="phone" class="form-input" placeholder="Phone Number">
-                        </div>
-                        <div class="border-b border-border">
-                            <input type="text" name="vehicle" class="form-input" placeholder="Vehicle (Year, Make, Model)">
-                        </div>
-                        <div class="border-b border-border">
-                            <select name="service" class="form-input appearance-none cursor-pointer" style="color: #444;">
-                                <option value="" disabled selected>Select Service Type</option>
-                                <option value="engine-mounts" style="color:#F0F0F0;background:#111;">Engine / Transmission Mounts</option>
-                                <option value="intercooler" style="color:#F0F0F0;background:#111;">Intercooler & Piping</option>
-                                <option value="exhaust-turbo" style="color:#F0F0F0;background:#111;">Exhaust & Turbo Kits</option>
-                                <option value="mini-tub" style="color:#F0F0F0;background:#111;">Mini Tub & Chassis</option>
-                                <option value="roll-cage" style="color:#F0F0F0;background:#111;">Roll Cages</option>
-                                <option value="fuel-systems" style="color:#F0F0F0;background:#111;">Fuel Tanks & Catch Cans</option>
-                                <option value="other" style="color:#F0F0F0;background:#111;">Other</option>
-                            </select>
-                        </div>
-                        <div class="border-b border-border">
-                            <textarea name="message" class="form-input" placeholder="Tell us about your project..."></textarea>
-                        </div>
-                        <div class="pt-8">
-                            <button type="submit" class="w-full flex items-center justify-center gap-3 bg-accent text-white px-8 py-5 text-sm uppercase tracking-[0.15em] font-medium hover:bg-accentDark transition-colors duration-300">
-                                Send Message
-                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                            </button>
-                            <p class="text-textMuted text-xs mt-4 text-center">We typically respond within 24–48 hours.</p>
-                        </div>
-                    </form>
+                    <div class="bg-surface border border-border p-4 md:p-6">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeb1m7D9Gvmzvw91e8C0KX7lJTILmc0sozx4kslo_CpIoOIDw/viewform?embedded=true" width="100%" height="691" frameborder="0" marginheight="0" marginwidth="0" style="filter: invert(0.92) hue-rotate(180deg); border-radius: 4px;">Loading…</iframe>
+                    </div>
+                    <p class="text-textMuted text-xs mt-4 text-center">We typically respond within 24–48 hours.</p>
                 </div>
             </div>
         </div>
@@ -639,12 +607,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- TOAST -->
-    <div id="toast" class="toast fixed bottom-8 right-8 z-[70] bg-surface border border-accent/30 px-6 py-4 flex items-center gap-3 shadow-2xl">
-        <i data-lucide="check-circle" class="w-5 h-5 text-accent"></i>
-        <span class="text-sm text-textPrimary">Message sent successfully.</span>
-    </div>
 
     <script>
         lucide.createIcons();
@@ -681,33 +643,6 @@
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
         revealElements.forEach(el => revealObserver.observe(el));
-
-        const selectEl = document.querySelector('select.form-input');
-        selectEl.addEventListener('change', function() {
-            this.style.color = '#F0F0F0';
-        });
-
-        const contactForm = document.getElementById('contactForm');
-        const toast = document.getElementById('toast');
-
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const btn = this.querySelector('button[type="submit"]');
-            const originalHTML = btn.innerHTML;
-            btn.innerHTML = '<span class="inline-block w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></span> Sending...';
-            btn.disabled = true;
-
-            setTimeout(() => {
-                btn.innerHTML = originalHTML;
-                btn.disabled = false;
-                contactForm.reset();
-                selectEl.style.color = '#444';
-
-                toast.classList.add('show');
-                setTimeout(() => toast.classList.remove('show'), 3500);
-            }, 1500);
-        });
 
         const nav = document.querySelector('nav');
         window.addEventListener('scroll', () => {
